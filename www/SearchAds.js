@@ -1,10 +1,8 @@
 var exec = cordova.require('cordova/exec');
 
-var SearchAds = function() {
-    console.log('SearchAds instanced');
-};
+var SearchAds = {};
 
-SearchAds.prototype.initialize = function(onSuccess, onError) {
+SearchAds.initialize = function(onSuccess, onError) {
     var errorCallback = function(obj) {
         onError(obj);
     };
